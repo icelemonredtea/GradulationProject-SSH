@@ -1,0 +1,28 @@
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+	
+<struts>
+
+	<!-- 配置和客户管理相关动作 -->
+	<package name="picture" extends="MyDefault">
+		<!-- 查询所有信息 -->
+		<action name="findAllPicture" class="pictureAction" method="findAllPicture">
+			<result name="findAllPicture">/solution.jsp</result>	
+		</action>
+		<!-- 保存 -->
+		<action name="savePicture" class="pictureAction" method="savePicture">
+			<result name="savePicture">/index.jsp</result>
+			<!-- 表单输出有误时处理回流 -->
+			<result name="input">/index.jsp</result>
+			<!-- 上传失败处理 -->
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 删除单个信息 -->
+		<!-- <action name="deletePicture" class="pictureAction" method="deletePicture">
+			<result name="deletePicture">/solution.jsp</result>
+		</action> -->
+	</package>
+
+</struts>

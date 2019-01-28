@@ -1,0 +1,17 @@
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+	
+<struts>
+
+	<!-- 开启开发者模式 -->
+	<constant name="struts.devMode" value="true"></constant>
+
+	<!-- 动作标签 -->
+	<package name="MyDefault" extends="struts-default" abstract="true">
+	</package>
+
+	<!-- 引入其他struts2配置文件 -->
+	<include file="config/struts/struts-picture.xml"></include>
+</struts>

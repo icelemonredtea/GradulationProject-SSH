@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx" 
+        xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       						http://www.springframework.org/schema/beans/spring-beans.xsd
+        					http://www.springframework.org/schema/tx 
+        					http://www.springframework.org/schema/tx/spring-tx.xsd
+       						http://www.springframework.org/schema/aop 
+        					http://www.springframework.org/schema/aop/spring-aop.xsd"> 
+
+
+	<!-- 配置service的bean三层 -->
+	<bean id="pictureService" class="com.yaogan.service.imp.PictureServiceImp">
+		<property name="pictureDao" ref="pictureDao"></property>
+	</bean>
+
+	<!-- 配置dao -->
+	<bean id="pictureDao" class="com.yaogan.dao.imp.PictureDaoImp">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 配置action动作 -->
+	<bean id="pictureAction" class="com.yaogan.web.action.PictureAction" scope="prototype">
+		<property name="pictureService" ref="pictureService"></property>
+	</bean>	
+	
+</beans>
