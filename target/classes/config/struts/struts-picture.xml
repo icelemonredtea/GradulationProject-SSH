@@ -9,7 +9,7 @@
 	<package name="picture" extends="MyDefault">
 		<!-- 查询所有信息 -->
 		<action name="findAllPicture" class="pictureAction" method="findAllPicture">
-			<result name="findAllPicture">/solution.jsp</result>	
+			<result name="findAllPicture">/WEB-INF/jsp/solution.jsp</result>	
 		</action>
 		<!-- 保存 -->
 		<action name="savePicture" class="pictureAction" method="savePicture">
@@ -17,7 +17,7 @@
 			<!-- 表单输出有误时处理回流 -->
 			<result name="input">/index.jsp</result>
 			<!-- 上传失败处理 -->
-			<result name="error">/error.jsp</result>
+			<result name="error">/WEB-INF/jsp/error.jsp</result>
 		</action>
 		<!-- 删除单个信息 -->
 		<!-- <action name="deletePicture" class="pictureAction" method="deletePicture">
