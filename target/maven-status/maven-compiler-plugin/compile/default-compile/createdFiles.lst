@@ -1,0 +1,10 @@
+com\yaogan\algorithm\kmeans\dataItem.class
+com\yaogan\service\imp\PictureServiceImp.class
+com\yaogan\service\PictureService.class
+com\yaogan\domain\Picture.class
+com\yaogan\algorithm\kmeans\K_meansAlgorithm.class
+com\yaogan\web\action\PictureAction.class
+com\yaogan\algorithm\kmeans\ImageCluster.class
+com\yaogan\algorithm\kmeans\Test.class
+com\yaogan\dao\PictureDao.class
+com\yaogan\dao\imp\PictureDaoImp.class
