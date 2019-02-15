@@ -7,15 +7,21 @@
 
 	<!-- 配置和客户管理相关动作 -->
 	<package name="picture" extends="MyDefault">
+	
+		<!-- 进入选择页面 -->
+		<action name="pictureSelect" class="pictureAction" method="pictureSelect">
+			<result name="pictureSelect">/WEB-INF/jsp/pictureSetting.jsp</result>
+		</action>
+	
 		<!-- 查询所有信息 -->
 		<action name="findAllPicture" class="pictureAction" method="findAllPicture">
-			<result name="findAllPicture">/WEB-INF/jsp/solution.jsp</result>	
+			<result name="findAllPicture">/WEB-INF/jsp/list.jsp</result>	
 		</action>
 		<!-- 保存 -->
 		<action name="savePicture" class="pictureAction" method="savePicture">
-			<result name="savePicture">/index.jsp</result>
+			<result name="savePicture">/WEB-INF/jsp/pictureList.jsp</result>
 			<!-- 表单输出有误时处理回流 -->
-			<result name="input">/index.jsp</result>
+			<result name="input" type="redirect">/pictureSelect.action</result>
 			<!-- 上传失败处理 -->
 			<result name="error">/WEB-INF/jsp/error.jsp</result>
 		</action>

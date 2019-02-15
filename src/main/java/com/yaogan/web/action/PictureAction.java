@@ -43,6 +43,11 @@ public class PictureAction extends ActionSupport implements ModelDriven<Picture>
 	}
 
 	
+	//进入选择页面
+	public String pictureSelect() {
+		return "pictureSelect";
+	}
+	
 
 	//查询图片
 	public String findAllPicture(){

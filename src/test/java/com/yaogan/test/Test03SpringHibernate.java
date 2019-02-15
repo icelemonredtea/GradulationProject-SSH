@@ -3,6 +3,7 @@ package com.yaogan.test;
 
 
 import java.sql.Date;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,14 +40,14 @@ public class Test03SpringHibernate {
 		
 	}
 	
-//	@Test
-//	public void testfindAll(){
-//		List<Picture> pictures = ps.findAllPicture();
-//		for(Picture picture : pictures) {
-//			System.err.println(picture);
-//		}
-//	}
-//	
-//	
+	@Test
+	public void testfindAll(){
+		List<Picture> pictures = ps.findAllPicture();
+		for(Picture picture : pictures) {
+			System.err.println(picture);
+		}
+	}
+	
+	
 	
 }
