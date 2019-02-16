@@ -47,8 +47,8 @@
 	
 	<div class="jumbotron" style="background-color: transparent">
       <div class="container">
-        <p style="color: white;">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/pictureSelect.action">Learn more »</a></p>
+        <p style="color: white;">点击进入图像分割参数设置，文件选择页面</p>
+        <p><a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/pictureSelect.action">go into »</a></p>
       </div>
     </div>
     
